@@ -35,13 +35,11 @@ import com.cbi.markertph.data.model.TPHModel
 import com.cbi.markertph.data.repository.TPHRepository
 import com.cbi.markertph.databinding.FragmentHomeBinding
 import com.cbi.markertph.databinding.PertanyaanSpinnerLayoutBinding
-import com.cbi.markertph.ui.view.HomeActivity.InputType
-import com.cbi.markertph.ui.viewModel.LocationViewModel
-import com.cbi.markertph.ui.viewModel.TPHViewModel
 import com.cbi.markertph.utils.AlertDialogUtility
 import com.cbi.markertph.utils.AppUtils
 import com.cbi.markertph.utils.AppUtils.stringXML
 import com.cbi.markertph.utils.AppUtils.vibrate
+import com.cbi.markertph.utils.FormHelper.InputType
 import com.cbi.markertph.utils.PrefManager
 import com.google.android.material.button.MaterialButton
 import com.google.android.material.snackbar.Snackbar
@@ -49,6 +47,8 @@ import com.jaredrummler.materialspinner.MaterialSpinner
 import java.text.SimpleDateFormat
 import java.util.Date
 import java.util.Locale
+import com.cbi.markertph.ui.viewModel.LocationViewModel
+import com.cbi.markertph.ui.viewModel.TPHViewModel
 
 class HomeFragment : Fragment() {
 

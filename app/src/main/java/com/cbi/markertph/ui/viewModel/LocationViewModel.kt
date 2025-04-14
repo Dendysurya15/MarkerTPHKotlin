@@ -187,6 +187,15 @@ class LocationViewModel(application: Application, private val imageView: ImageVi
         }
     }
 
+    fun createLocationRequest(): LocationRequest {
+        return LocationRequest.create().apply {
+            priority = LocationRequest.PRIORITY_HIGH_ACCURACY
+            interval = 5000 // Update every 5 seconds
+            fastestInterval = 2000 // But can handle updates as fast as every 2 seconds
+            smallestDisplacement = 0f // Min distance for update
+        }
+    }
+
     @Suppress("UNCHECKED_CAST")
     class Factory(
         private val application: Application,
